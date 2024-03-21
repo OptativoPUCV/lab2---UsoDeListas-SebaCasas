@@ -60,7 +60,7 @@ int sumaLista(List *L) {
   int large = get_size(L);
   int sumaElem = 0;
   for(int i = 0 ; i < large ; i++)
-    sumaElem += L[i];
+    sumaElem += *(L[i]);
   return sumaElem;
 }
 
