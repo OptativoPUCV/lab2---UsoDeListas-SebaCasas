@@ -63,3 +63,24 @@ Thu 21 Mar 2024 10:17:08 PM UTC:
  tests:  3|3
 total_score: 20/70
 4a88f6c
+Thu 21 Mar 2024 10:17:24 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘parentesisBalanceados’:
+exercises.c:102:11: error: ‘true’ undeclared (first use in this function)
+  102 |    return true;
+      |           ^~~~
+exercises.c:8:1: note: ‘true’ is defined in header ‘<stdbool.h>’; did you forget to ‘#include <stdbool.h>’?
+    7 | #include "stack.h"
+  +++ |+#include <stdbool.h>
+    8 | 
+exercises.c:102:11: note: each undeclared identifier is reported only once for each function it appears in
+  102 |    return true;
+      |           ^~~~
+exercises.c:103:1: error: control reaches end of non-void function [-Werror=return-type]
+  103 | }
+      | ^
+cc1: all warnings being treated as errors
+Compilation failed
+daf10d0
