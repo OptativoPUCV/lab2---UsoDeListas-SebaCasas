@@ -102,3 +102,14 @@ Thu 21 Mar 2024 10:21:39 PM UTC:
  tests:  2|3
 total_score: 20/70
 2eccf15
+Thu 21 Mar 2024 10:28:36 PM UTC: 
+ exercises.c | 8 +++++++-
+ 1 file changed, 7 insertions(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘eliminaElementos’:
+exercises.c:81:7: error: unused variable ‘sumaElem’ [-Werror=unused-variable]
+   81 |   int sumaElem = 0;
+      |       ^~~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+0687136
