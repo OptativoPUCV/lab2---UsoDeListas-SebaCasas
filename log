@@ -113,3 +113,9 @@ exercises.c:81:7: error: unused variable ‘sumaElem’ [-Werror=unused-variable
 cc1: all warnings being treated as errors
 Compilation failed
 0687136
+Thu 21 Mar 2024 10:28:46 PM UTC: 
+ exercises.c | 1 -
+ 1 file changed, 1 deletion(-)
+ tests:  3|2
+total_score: 40/70
+4de5d7a
