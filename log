@@ -155,3 +155,14 @@ Sat 23 Mar 2024 01:14:00 AM UTC:
  tests:  3|2
 total_score: 40/70
 73695fa
+Sat 23 Mar 2024 01:20:04 AM UTC: 
+ exercises.c | 14 +++++++++++++-
+ 1 file changed, 13 insertions(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘parentesisBalanceados’:
+exercises.c:117:15: error: ‘texto’ undeclared (first use in this function)
+  117 |       switch (texto[i]) {
+      |               ^~~~~
+exercises.c:117:15: note: each undeclared identifier is reported only once for each function it appears in
+Compilation failed
+2af03c6
