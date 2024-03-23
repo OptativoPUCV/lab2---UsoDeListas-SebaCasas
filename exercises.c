@@ -113,19 +113,18 @@ int parentesisBalanceados(char *cadena) {
       largoP++;
     }
     else{
-      char inverso;
       switch (cadena[i]) {
         case ')':
-          inverso = '(';
+          cadena[i] = '(';
           break;
         case '}':
-          inverso = '{';
+          cadena[i] = '{';
           break;
         case ']':
-          inverso = '[';
+          cadena[i] = '[';
           break;
       }
-      if( inverso == *(char*)top(P)){
+      if( cadena[i] == *(char*)top(P)){
         pop(P);
         largoP--;}
       else

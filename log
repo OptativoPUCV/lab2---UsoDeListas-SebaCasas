@@ -177,3 +177,9 @@ exercises.c:128:9: error: ‘inverso’ may be used uninitialized in this functi
 cc1: all warnings being treated as errors
 Compilation failed
 8473436
+Sat 23 Mar 2024 01:21:18 AM UTC: 
+ exercises.c | 9 ++++-----
+ 1 file changed, 4 insertions(+), 5 deletions(-)
+ tests:  8|1
+total_score: 60/70
+a39f99d
