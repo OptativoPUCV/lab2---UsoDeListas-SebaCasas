@@ -109,19 +109,26 @@ int parentesisBalanceados(char *cadena) {
   int sumaLla = 0;
   int sumaCor = 0;
   for(int i = 0 ; cadena[i] != '\0' ; i++){
-    if(cadena[i] == '(')
+    if(cadena[i] == '('){
       sumaPar++;
-    else
+      continue;}
+    else{
       sumaPar--;
-    if(cadena[i] == '{')
+      continue;}
+    if(cadena[i] == '{'){
       sumaLla++;
-    else
+      continue;}
+    else{
       sumaLla--;
+      continue;}
 
-    if(cadena[i] == '[')
+    if(cadena[i] == '['){
       sumaCor++;
-    else
+      continue;}
+      
+    else{
       sumaCor--;
+      continue;}
   }
   if(sumaPar == 0 && sumaLla == 0 && sumaCor == 0)
     return 1;
