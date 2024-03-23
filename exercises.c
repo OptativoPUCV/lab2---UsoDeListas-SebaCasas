@@ -104,7 +104,18 @@ paraéntesis balanceados. Retorna 1 si están balanceados,
 0 en caso contrario.
 */
 
-int parentesisBalanceados(char *cadena) {
-   return 0;
+int parentesisBalanceados(char *cadena) {  
+  int sumaOpen = 0;
+  for(int i = 0 ; cadena[i] != '\0' ; i++){
+    if(cadena[i] == '(' || cadena[i] == '{' || cadena[i] == '['){
+      sumaOpen++;
+    }
+    else
+      sumaOpen--;
+  }
+  if(sumaOpen == 0)
+    return 1;
+  else
+    return 0;
 }
 
