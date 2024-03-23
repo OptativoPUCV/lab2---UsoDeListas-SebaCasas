@@ -166,3 +166,14 @@ exercises.c:117:15: error: ‘texto’ undeclared (first use in this function)
 exercises.c:117:15: note: each undeclared identifier is reported only once for each function it appears in
 Compilation failed
 2af03c6
+Sat 23 Mar 2024 01:20:16 AM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘parentesisBalanceados’:
+exercises.c:128:9: error: ‘inverso’ may be used uninitialized in this function [-Werror=maybe-uninitialized]
+  128 |       if( inverso == *(char*)top(P)){
+      |         ^
+cc1: all warnings being treated as errors
+Compilation failed
+8473436

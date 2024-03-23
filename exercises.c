@@ -114,7 +114,7 @@ int parentesisBalanceados(char *cadena) {
     }
     else{
       char inverso;
-      switch (texto[i]) {
+      switch (cadena[i]) {
         case ')':
           inverso = '(';
           break;
