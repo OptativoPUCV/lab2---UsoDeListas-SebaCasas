@@ -94,7 +94,13 @@ Puedes usar una pila auxiliar.
 */
 
 void copia_pila(Stack* P1, Stack* P2) {
-  
+  Stack* aux = create_stack();
+  for( int i = *(int*)top(P1) ; i >= 0 ; i--){
+    push(aux, top(P1));
+    pop(P1);}
+  for( int k = *(int*)top(aux) ; k >= 0 ; k--){
+    push(P2, top(aux));
+    pop(aux);}
 }
 
 /*
@@ -122,8 +128,8 @@ int parentesisBalanceados(char *cadena) {
           break;
         case ']':
           cadena[i] = '[';
-          break;
-      }
+          break;}
+      
       if( cadena[i] == *(char*)top(P)){
         pop(P);
         largoP--;}
