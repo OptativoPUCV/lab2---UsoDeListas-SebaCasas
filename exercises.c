@@ -112,13 +112,13 @@ int parentesisBalanceados(char *cadena) {
     if(cadena[i] == '('){
       sumaPar++;
       continue;}
-    else{
+    else if(cadena[i] == ')'){
       sumaPar--;
       continue;}
     if(cadena[i] == '{'){
       sumaLla++;
       continue;}
-    else{
+    else if(cadena[i] == '}'){
       sumaLla--;
       continue;}
 
@@ -126,7 +126,7 @@ int parentesisBalanceados(char *cadena) {
       sumaCor++;
       continue;}
       
-    else{
+    else if(cadena[i] == ']'){
       sumaCor--;
       continue;}
   }
